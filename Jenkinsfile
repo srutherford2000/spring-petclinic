@@ -17,8 +17,7 @@ pipeline {
     stage('Run') {
       steps {
         sh './mvnw package'
-        sh 'java -jar target/*.jar &'
-        sh 'jobs -l'
+        sh 'timeout 60s java -jar target/*.jar'
       }
     }
 

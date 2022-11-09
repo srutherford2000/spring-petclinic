@@ -18,7 +18,7 @@ pipeline {
       steps {
         sh './mvnw package'
         sh 'java -jar target/*.jar &'
-        sh 'echo here'
+        sh 'jobs -l'
       }
     }
 

@@ -10,7 +10,7 @@ pipeline {
     
     stage('Test') {
       steps {
-        sh 'mvn sonar:sonar -Dsonar.login=sqa_1df21d0ba858efc3ba000795e747b6acd3d062ef'
+        sh 'mvn sonar:sonar -Dsonar.login=sqa_405cabb51eeab471f9b1f4d21d14b38e7d5cc017'
       }
     }
     

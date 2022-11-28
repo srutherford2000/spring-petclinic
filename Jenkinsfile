@@ -24,7 +24,7 @@ pipeline {
 
         stage('Run on The Other Server') {
           steps {
-            ansiblePlaybook '/etc/ansible/test_playbook.yml'
+            sh 'ansible-playbook /etc/ansible/test_playbook.yml'
           }
         }
 

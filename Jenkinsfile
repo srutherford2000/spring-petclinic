@@ -24,7 +24,7 @@ pipeline {
 
         stage('Run on The Other Server') {
           steps {
-            sh 'echo "vagrant" | ansible-playbook /etc/ansible/test_playbook.yml -v --ask-pass'
+            sh 'ansible-playbook /etc/ansible/test_playbook.yml'
           }
         }
 
